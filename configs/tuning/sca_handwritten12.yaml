@@ -1,0 +1,28 @@
+# Tuning config for: method=sca, data=handwritten
+# List values are grid-searched; scalar values are fixed.
+
+# --- Method (fixed) ---
+method: sca
+output_size: 2
+loss_func: CE
+n_epochs: 50
+num_anchors: 0
+
+# --- Method (tuned) ---
+orthogonal_w: [0.1, 1.0, 10.0]
+encoder_lr: [0.001, 0.01]
+discr_lr: [0.0001, 0.001]
+batch_size: 1024
+n_z: 1
+lsmooth: 0.2
+
+# --- Data ---
+data: handwritten
+view1_idx: 1
+view2_idx: 2
+n_test: 256
+
+# --- Experiment ---
+n_repeats: 5
+seed: 42
+results_dir: results

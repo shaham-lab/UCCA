@@ -1,0 +1,17 @@
+# Config for: method=pca_cca, data=coco
+# All parameters for this experiment pair
+
+# --- Method ---
+method: pca_cca
+output_size: 2
+pca_dim: 10
+
+# --- Data ---
+data: coco
+n_test: 256
+split: paired
+
+# --- Experiment ---
+n_repeats: 10
+seed: 42
+results_dir: results

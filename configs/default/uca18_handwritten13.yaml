@@ -1,0 +1,24 @@
+# Config for: method=uca18, data=handwritten23
+# Based on Hoshen & Wolf (2018) Unsupervised Correlation Analysis
+
+# --- Method ---
+method: uca18
+output_size: 2
+lr: 0.001 # 0.0001
+n_epochs: 100
+batch_size: 64
+lambda_rec: 1.0 # 10.0
+lambda_cyc: 10.0
+lambda_ortho: 1.0
+k_consensus: 5
+
+# --- Data ---
+data: handwritten
+view1_idx: 1
+view2_idx: 3
+n_test: 256
+
+# --- Experiment ---
+n_repeats: 10
+seed: 42
+results_dir: results

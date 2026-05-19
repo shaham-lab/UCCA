@@ -1,0 +1,17 @@
+# Config for: method=scot1_cca, data=coco
+# All parameters for this experiment pair
+
+# --- Method ---
+method: scot1_cca
+output_size: 2
+k: 50 # None
+eps: 0.01 # None
+
+# --- Data ---
+data: coco
+n_test: 256
+
+# --- Experiment ---
+n_repeats: 10
+seed: 42
+results_dir: results

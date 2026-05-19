@@ -1,0 +1,14 @@
+method: uca18_linear
+output_size: 2
+n_epochs: 100
+batch_size: 64
+k_consensus: 5
+lr: [0.0001, 0.001]
+lambda_rec: [1.0, 10.0]
+lambda_cyc: [1.0, 10.0]
+lambda_ortho: [1.0]
+data: coco
+n_test: 256
+n_repeats: 5
+seed: 42
+results_dir: results

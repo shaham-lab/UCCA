@@ -1,0 +1,45 @@
+from baselines.jmds.JointMDS.joint_mds import JointMDS
+import numpy as np
+from sklearn.cross_decomposition import CCA
+
+
+def run_jmds_cca(X_train, Y_train, output_size, X_test=None, Y_test=None, **kwargs):
+    """
+    Run JointMDS.
+
+    Args:
+        X_train, Y_train: Training tensors.
+        output_size (int or list[int]): Number of components. If a list,
+            JMDS is fit once with max(output_size) and results are returned
+            for each dim as a dict {dim: (out1, out2)}.
+        X_test, Y_test: Test tensors (default to train if None).
+
+    Returns:
+        (output1, output2) if output_size is int, else dict[int -> (out1, out2)].
+    """
+    if X_test is None or Y_test is None:
+        X_test = X_train
+        Y_test = Y_train
+
+    subsample_size = 2000
+    if X_train.shape[0] > subsample_size:
+        subsample_indices = np.random.choice(X_train.shape[0], subsample_size, replace=False)
+        X_train = X_train[subsample_indices]
+        Y_train = Y_train[subsample_indices]
+
+    dims = output_size if isinstance(output_size, list) else None
+    fit_size = max(dims) if dims is not None else output_size
+
+    jmds = JointMDS(n_components=fit_size, **kwargs)
+    _, _, P = jmds.fit_transform(X_train.cpu().numpy(), Y_train.cpu().numpy())
+    Y_train_matched = P @ Y_train.cpu().numpy()
+
+    cca = CCA(n_components=fit_size)
+    cca.fit(X_train.cpu().numpy(), Y_train_matched)
+    out1_full, out2_full = cca.transform(X_test.cpu().numpy(), Y_test.cpu().numpy())
+
+
+    if dims is None:
+        return out1_full, out2_full
+
+    return {d: (out1_full[:, :d], out2_full[:, :d]) for d in dims}

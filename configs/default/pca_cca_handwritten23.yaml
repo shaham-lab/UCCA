@@ -1,0 +1,18 @@
+# Config for: method=pca_cca, data=handwritten
+# All parameters for this experiment pair
+
+# --- Method ---
+method: pca_cca
+output_size: 2
+
+# --- Data ---
+data: handwritten
+view1_idx: 2
+view2_idx: 3
+n_test: 256
+split: paired
+
+# --- Experiment ---
+n_repeats: 2
+seed: 42
+results_dir: results

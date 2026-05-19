@@ -1,0 +1,16 @@
+method: sca
+output_size: 2
+loss_func: CE
+n_epochs: 50
+num_anchors: 0
+batch_size: 1024
+n_z: 1
+lsmooth: 0.2
+data: flickr8k
+n_test: 512
+n_repeats: 10
+seed: 42
+results_dir: results
+orthogonal_w: 1.0 # 0.1
+encoder_lr: 0.01 # 0.001
+discr_lr: 0.0001

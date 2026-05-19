@@ -1,0 +1,13 @@
+sbatch_scripts/
+outs/
+results/
+__pycache__/
+*/__pycache__/
+environment.yml
+cov_svd/figures/
+datasets/*/encoded*.pt
+datasets/*/labels.pt
+datasets/*/run_download.sh
+slurm-*.out
+analysis/cov_svd/figures
+datasets/coco/val2017.zip

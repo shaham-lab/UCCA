@@ -1,0 +1,17 @@
+# Config for: method=scot2_cca, data=handwritten
+# All parameters for this experiment pair
+
+# --- Method ---
+method: scot2_cca
+output_size: 2
+k: 100 # None
+eps: 0.005 # None
+
+# --- Data ---
+data: snare
+n_test: 256
+
+# --- Experiment ---
+n_repeats: 2
+seed: 42
+results_dir: results

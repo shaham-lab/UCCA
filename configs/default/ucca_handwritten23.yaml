@@ -1,0 +1,23 @@
+# Config for: method=ucca, data=handwritten
+# All parameters for this experiment pair
+
+# --- Method ---
+method: ucca
+output_size: 2
+qap_solver: 2opt
+qap_n_runs: 30
+anchors_n_runs: 10
+pca_n_components: 10
+n_anchors: 20
+projection_type: cca
+
+# --- Data ---
+data: handwritten
+view1_idx: 2
+view2_idx: 3
+n_test: 256
+
+# --- Experiment ---
+n_repeats: 10
+seed: 42
+results_dir: results

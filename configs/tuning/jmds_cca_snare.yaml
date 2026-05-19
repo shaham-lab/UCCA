@@ -1,0 +1,9 @@
+method: jmds_cca
+output_size: 2
+alpha: [0.5, 1.0, 2.0]
+eps: [0.005, 0.01, 0.05]
+data: snare
+n_test: 256
+n_repeats: 5
+seed: 42
+results_dir: results

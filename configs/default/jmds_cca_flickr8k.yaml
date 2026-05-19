@@ -1,0 +1,18 @@
+# Config for: method=jmds_cca, data=flickr8k
+# Generated config
+
+# --- Method ---
+method: jmds_cca
+output_size: 2
+alpha: 2.0 # None
+eps: 0.05 # None
+
+# --- Data ---
+data: flickr8k
+n_test: 512
+split: unpaired
+
+# --- Experiment ---
+n_repeats: 10
+seed: 42
+results_dir: results

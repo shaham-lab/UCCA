@@ -1,0 +1,11 @@
+method: scot1_cca
+output_size: 2
+k: [20, 50, 100]
+eps: [0.001, 0.005, 0.01]
+data: handwritten
+view1_idx: 1
+view2_idx: 2
+n_test: 256
+n_repeats: 5
+seed: 42
+results_dir: results
