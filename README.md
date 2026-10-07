@@ -1,13 +1,18 @@
 <div align="center">
   
-# 🌌 UCCA: Unpaired Canonical Correlation Analysis
+# <img src="figures/ucca_icon.svg" alt="UCCA icon" height="32"> UCCA: Unpaired Canonical Correlation Analysis
 
+**NeurIPS 2026**
+
+[![Project Page](https://img.shields.io/badge/Project-Page-blue.svg)](https://shaham-lab.github.io/UCCA_page/)
 [![arXiv](https://img.shields.io/badge/arXiv-[000]-b31b1b.svg)](https://arxiv.org/)
 <!-- [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) -->
 
 </div>
 
-This is the official implementation of UCCA from the paper: "Unpaired Canonical Correlation Analysis".
+This is the official implementation of UCCA from the NeurIPS 2026 paper: "Unpaired Canonical Correlation Analysis".
+
+🌐 **Project page:** https://shaham-lab.github.io/UCCA_page/
 
 <p align="center">
   <img src="figures/tc_fig.png" alt="UCCA Results" width="80%">
@@ -111,11 +116,12 @@ Our repository builds upon and compares against several excellent baseline metho
 
 If you find this work useful in your research, please consider citing our paper:
 
-<!-- ```bibtex
-@article{ucca_202X,
+```bibtex
+@article{benari2026unpaired,
   title={Unpaired Canonical Correlation Analysis},
-  author={[Author Name 1] and [Author Name 2] and [Author Name 3]},
-  journal={arXiv preprint arXiv:[INSERT_ARXIV_ID]},
-  year={202X}
+  author={Ben-Ari, Nir and Talmon, Ronen and Shaham, Uri},
+  journal={Advances in Neural Information Processing Systems},
+  volume={39},
+  year={2026}
 }
-``` -->
+```
