@@ -5,7 +5,7 @@
 **NeurIPS 2026**
 
 [![Project Page](https://img.shields.io/badge/Project-Page-blue.svg)](https://shaham-lab.github.io/UCCA_page/)
-[![arXiv](https://img.shields.io/badge/arXiv-[000]-b31b1b.svg)](https://arxiv.org/)
+[![arXiv](https://img.shields.io/badge/arXiv-2610.09530-b31b1b.svg)](https://arxiv.org/abs/2610.09530)
 <!-- [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) -->
 
 </div>
